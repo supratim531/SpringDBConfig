@@ -1,0 +1,26 @@
+server.port=8888
+
+# All database information
+spring.datasource.username=sa
+spring.datasource.password=sa
+spring.datasource.url=jdbc:h2:mem:sayan
+spring.datasource.driverClassName=org.h2.Driver
+
+# Keep db in HDD
+#spring.datasource.url=jdbc:h2:E:/folder/db
+
+# To see the database in browser
+spring.h2.console.path=/h2db
+spring.h2.console.enabled=true
+spring.h2.console.settings.web-allow-others=true
+
+# To see all queries in output
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Database management policies
+# update: create once
+# create: create every time of application up
+# create-drop: create at the start of app and drop before end of app
+spring.jpa.hibernate.ddl-auto=update

@@ -1,0 +1,18 @@
+server.port=8888
+
+# All database information
+spring.datasource.username=root
+spring.datasource.password=root
+spring.datasource.url=jdbc:mysql://localhost:3306/dbname
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# To see all queries in output
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
+
+# Database management policies
+# update: create once
+# create: create every time of application up
+# create-drop: create at the start of app and drop before end of app
+spring.jpa.hibernate.ddl-auto=update

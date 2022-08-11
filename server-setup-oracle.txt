@@ -1,0 +1,18 @@
+server.port=8888
+
+# All database information
+spring.datasource.username=C##SCOTT
+spring.datasource.password=tiger
+spring.datasource.url=jdbc:oracle:thin:@//localhost:1521/XE
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+
+# To see all queries in output
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.database-platform=org.hibernate.dialect.Oracle12cDialect
+
+# Database management policies
+# update: create once
+# create: create every time of application up
+# create-drop: create at the start of app and drop before end of app
+spring.jpa.hibernate.ddl-auto=update
